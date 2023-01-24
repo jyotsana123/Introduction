@@ -15,7 +15,7 @@ public class Table {
 		// TODO Auto-generated method stub
 
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jyotsana Pandey\\Downloads\\chromeversion_106\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jyotsana Pandey\\Downloads\\chromeversion_108\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
@@ -35,10 +35,10 @@ public class Table {
 		//No. of rows or row count
 		//System.out.println("No. of rows = " +driver.findElements(By.xpath("//fieldset/table/tbody/tr")).size());
 		WebElement table = driver.findElement(By.id("product"));
-		System.out.println(table.findElements(By.tagName("tr")).size());
+		System.out.println("No. of row = " +table.findElements(By.tagName("tr")).size());
 		//Column count
 		//System.out.println("No. of column = " +driver.findElements(By.xpath("//fieldset/table/tbody/tr/th")).size());
-		System.out.println(table.findElements(By.tagName("th")).size());
+		System.out.println("No. of column = " +table.findElements(By.tagName("th")).size());
 		
 	}
 
